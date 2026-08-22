@@ -1,0 +1,2004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binz O’ Boris | Premium Readymade Swimming Pools</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Binz O’ Boris provides premium readymade swimming pools with customised designs, durable construction and professional installation for homes, resorts and commercial spaces.">
+    <meta name="keywords" content="swimming pools, readymade swimming pools, luxury pools, custom pools, resort pools, Binz O' Boris, pool construction">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Binz O’ Boris | Premium Readymade Swimming Pools">
+    <meta property="og:description" content="Transform your space with premium, durable, and customisable readymade swimming pools from Binz O' Boris.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS Variables - Inspired directly by the exhibition showroom color scheme */
+        :root {
+            --primary: #0a1c36;        /* Dark Navy Blue from the booth pillars */
+            --primary-light: #162f55;  /* Secondary Medium Navy */
+            --accent-cyan: #00d4ff;    /* Glowing LED Light Under Counter */
+            --accent-green: #2db34a;   /* Fresh Grass Carpet/Turf Accent on the Floor */
+            --accent-green-light: #ebf7ed;
+            --text-dark: #1f2937;
+            --text-muted: #6b7280;
+            --bg-white: #ffffff;
+            --bg-light: #f4f7fc;       /* Clean exhibition panel background */
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.05);
+            --shadow-premium: 0 15px 40px rgba(10, 28, 54, 0.12);
+            --border-radius: 12px;     /* Rounded corners matching modern showroom panels */
+        }
+
+        /* Basic Reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-white);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 2.4rem;
+            color: var(--primary);
+            position: relative;
+            padding-bottom: 15px;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-cyan), var(--primary));
+            border-radius: 2px;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-top: 15px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Interactive Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-cyan);
+            color: var(--primary);
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: #00bada;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: var(--primary);
+            color: var(--bg-white);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--primary-light);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(10, 28, 54, 0.2);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--accent-cyan);
+            color: var(--accent-cyan);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--accent-cyan);
+            color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        /* ================= NAVIGATION HEADER ================= */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--bg-white);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            padding: 5px 0;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+            background-color: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(10px);
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 24px;
+            transition: var(--transition);
+        }
+
+        .logo-wrap {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-main {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-sub {
+            font-size: 0.58rem;
+            font-weight: 800;
+            letter-spacing: 1.8px;
+            color: var(--primary);
+            opacity: 0.9;
+            margin-top: 2px;
+            text-transform: uppercase;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: var(--primary);
+            transition: var(--transition);
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-cyan);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover {
+            color: var(--accent-cyan);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            padding: 10px 20px;
+            font-size: 0.8rem;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            z-index: 1100;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary);
+            border-radius: 3px;
+            transition: var(--transition);
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: translateY(9px) rotate(45deg);
+            background-color: var(--accent-cyan);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: translateY(-9px) rotate(-45deg);
+            background-color: var(--accent-cyan);
+        }
+
+        /* ================= PREMIUM HERO SECTION ================= */
+        .hero {
+            padding-top: 120px;
+            padding-bottom: 60px;
+            background: linear-gradient(135deg, #f7f9fc 0%, #eef3f9 100%);
+            min-height: 95vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.12fr 0.88fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 3.4rem;
+            line-height: 1.15;
+            color: var(--primary);
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .hero-text h1 span {
+            color: #0099cc;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.1);
+        }
+
+        .hero-text p {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            margin-bottom: 35px;
+            max-width: 600px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 45px;
+        }
+
+        /* Main Hero Image Frame - Preserving Image 1 fully without unwanted crops */
+        .hero-image-frame {
+            position: relative;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-premium);
+            overflow: hidden;
+            background-color: var(--primary);
+            aspect-ratio: 4 / 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 6px solid var(--bg-white);
+        }
+
+        .hero-image-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Preserves people, desk, and pool display exactly as is */
+            transition: var(--transition);
+        }
+
+        /* Turf Green Banner/Feature Strip - Inspired by the Exhibition Green Grass Carpet */
+        .turf-banner {
+            background-color: var(--accent-green-light);
+            border-left: 5px solid var(--accent-green);
+            padding: 20px;
+            border-radius: 8px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .turf-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .turf-item svg {
+            color: var(--accent-green);
+            width: 22px;
+            height: 22px;
+            flex-shrink: 0;
+        }
+
+        .turf-item span {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--primary);
+        }
+
+        /* ================= ABOUT / SHOWROOM SECTION ================= */
+        .showroom-sec {
+            padding: 100px 0;
+            background-color: var(--bg-white);
+        }
+
+        /* 2x2 Image Grid - Exact Showroom Photos Placement */
+        .showroom-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .showroom-card {
+            background-color: var(--bg-light);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+            border: 3px solid #eef2f8;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .showroom-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-premium);
+            border-color: var(--accent-cyan);
+        }
+
+        .showroom-img-wrap {
+            position: relative;
+            aspect-ratio: 4/3;
+            overflow: hidden;
+            background-color: #071221;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .showroom-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Preserve precise proportions and layout graphics */
+            transition: var(--transition);
+        }
+
+        .showroom-card:hover .showroom-img-wrap img {
+            transform: scale(1.03);
+        }
+
+        .showroom-details {
+            padding: 20px;
+            background-color: var(--bg-white);
+            border-top: 1px solid #eef2f8;
+            flex-grow: 1;
+        }
+
+        .showroom-details h3 {
+            font-size: 1.15rem;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .showroom-details p {
+            color: var(--text-muted);
+            font-size: 0.88rem;
+            line-height: 1.5;
+        }
+
+        /* ================= GALLERY SECTION (Lightbox Integrated) ================= */
+        .gallery-sec {
+            padding: 100px 0;
+            background-color: var(--bg-light);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            aspect-ratio: 4/3;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: var(--shadow-soft);
+            background-color: #0d1e36;
+            border: 4px solid var(--bg-white);
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.04);
+            box-shadow: var(--shadow-premium);
+            border-color: var(--accent-cyan);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 28, 54, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay-icon {
+            color: var(--bg-white);
+            background-color: var(--accent-cyan);
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ================= WHY CHOOSE US ================= */
+        .why-choose {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: var(--bg-white);
+        }
+
+        .why-choose .section-header h2 {
+            color: var(--bg-white);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .why-card {
+            background-color: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: var(--border-radius);
+            padding: 35px 25px;
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .why-card:hover {
+            background-color: rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border-color: var(--accent-cyan);
+        }
+
+        .why-card-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 212, 255, 0.1);
+            border-radius: 50%;
+            color: var(--accent-cyan);
+        }
+
+        .why-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            color: var(--bg-white);
+        }
+
+        .why-card p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* ================= TIMELINE PROCESS SECTION ================= */
+        .process {
+            padding: 100px 0;
+            background-color: var(--bg-white);
+        }
+
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-top: 50px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 5%;
+            width: 90%;
+            height: 4px;
+            background-color: #e2e8f0;
+            z-index: 1;
+        }
+
+        .timeline-step {
+            position: relative;
+            z-index: 2;
+            width: 22%;
+            text-align: center;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: var(--bg-white);
+            border: 4px solid #e2e8f0;
+            color: var(--primary);
+            font-size: 1.6rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px auto;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+        }
+
+        .timeline-step:hover .step-number {
+            border-color: var(--accent-cyan);
+            background-color: var(--primary);
+            color: var(--bg-white);
+            transform: scale(1.1);
+        }
+
+        .timeline-step h3 {
+            font-size: 1.15rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .timeline-step p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* ================= TESTIMONIALS SECTION ================= */
+        .testimonials {
+            padding: 100px 0;
+            background-color: var(--bg-light);
+            overflow: hidden;
+        }
+
+        .testimonials-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .testimonial-slider {
+            position: relative;
+            overflow: hidden;
+            min-height: 280px;
+        }
+
+        .testimonial-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.5s ease;
+            pointer-events: none;
+        }
+
+        .testimonial-slide.active {
+            opacity: 1;
+            transform: translateX(0);
+            pointer-events: auto;
+            position: relative;
+        }
+
+        .testimonial-card {
+            background-color: var(--bg-white);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-premium);
+            text-align: center;
+        }
+
+        .testimonial-stars {
+            color: #fbbf24;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-text {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .testimonial-author h4 {
+            font-size: 1.05rem;
+            color: var(--primary);
+        }
+
+        .testimonial-author span {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .slider-controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .slider-btn {
+            background-color: var(--bg-white);
+            color: var(--primary);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+        }
+
+        .slider-btn:hover {
+            background-color: var(--primary);
+            color: var(--bg-white);
+        }
+
+        /* ================= CTA BANNER ================= */
+        .cta {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: var(--bg-white);
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 2.3rem;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            font-size: 1.1rem;
+            opacity: 0.85;
+            margin-bottom: 30px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* ================= CONTACT SECTION ================= */
+        .contact {
+            padding: 100px 0;
+            background-color: var(--bg-white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 50px;
+        }
+
+        .contact-form-wrap {
+            background-color: var(--bg-light);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .contact-form-wrap h3 {
+            font-size: 1.7rem;
+            color: var(--primary);
+            margin-bottom: 25px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--primary);
+        }
+
+        .form-control {
+            background-color: var(--bg-white);
+            border: 2px solid #e2e8f0;
+            padding: 12px 18px;
+            border-radius: var(--border-radius);
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            width: 100%;
+        }
+
+        .form-control:focus {
+            border-color: var(--accent-cyan);
+            outline: none;
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .success-message {
+            display: none;
+            background-color: #d1e7dd;
+            color: #0f5132;
+            border: 1px solid #badbcc;
+            padding: 15px;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .info-card {
+            background-color: var(--bg-light);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+            border-left: 4px solid var(--accent-cyan);
+        }
+
+        .info-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(0, 212, 255, 0.1);
+            color: var(--accent-cyan);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .info-card h4 {
+            color: var(--primary);
+            font-size: 1.05rem;
+            margin-bottom: 5px;
+        }
+
+        .info-card p {
+            color: var(--text-muted);
+            font-size: 0.92rem;
+            line-height: 1.5;
+        }
+
+        /* ================= FOOTER ================= */
+        footer {
+            background-color: var(--primary);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 80px 0 30px 0;
+            border-top: 4px solid var(--accent-cyan);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.3fr 0.8fr 0.8fr 1.1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-logo {
+            margin-bottom: 20px;
+        }
+
+        .footer-logo .logo-main {
+            color: var(--bg-white);
+        }
+
+        .footer-logo .logo-sub {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer-about p {
+            font-size: 0.88rem;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .social-btn {
+            background-color: rgba(255, 255, 255, 0.05);
+            color: var(--bg-white);
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .social-btn:hover {
+            background-color: var(--accent-cyan);
+            color: var(--primary);
+        }
+
+        .footer-title {
+            color: var(--bg-white);
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 8px;
+        }
+
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 35px;
+            height: 2px;
+            background-color: var(--accent-cyan);
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            font-size: 0.88rem;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-cyan);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 30px;
+            text-align: center;
+            font-size: 0.82rem;
+        }
+
+        /* ================= FLOATING UTILITIES ================= */
+        .floating-container {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 999;
+        }
+
+        .float-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--bg-white);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+        }
+
+        .float-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .float-whatsapp {
+            background-color: #25D366;
+        }
+
+        .float-call {
+            background-color: var(--accent-cyan);
+            color: var(--primary);
+        }
+
+        .float-scroll {
+            background-color: var(--primary);
+            color: var(--bg-white);
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .float-scroll.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* ================= PREMIUM VANILLA LIGHTBOX MODAL ================= */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(6, 17, 34, 0.98);
+            z-index: 2000;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            user-select: none;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            color: var(--bg-white);
+            font-size: 2.3rem;
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 2010;
+        }
+
+        .lightbox-close:hover {
+            color: var(--accent-cyan);
+            transform: rotate(90deg);
+        }
+
+        .lightbox-container {
+            position: relative;
+            max-width: 90%;
+            max-height: 75vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-img {
+            max-width: 100%;
+            max-height: 75vh;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+            object-fit: contain;
+            border: 4px solid rgba(255, 255, 255, 0.05);
+            transition: opacity 0.3s ease;
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            pointer-events: none;
+            z-index: 2005;
+        }
+
+        .lightbox-btn {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--bg-white);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            pointer-events: auto;
+            transition: var(--transition);
+        }
+
+        .lightbox-btn:hover {
+            background-color: var(--accent-cyan);
+            color: var(--primary);
+        }
+
+        .lightbox-footer {
+            margin-top: 25px;
+            text-align: center;
+            color: var(--bg-white);
+            z-index: 2010;
+        }
+
+        .lightbox-caption {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .lightbox-counter {
+            font-size: 0.85rem;
+            color: var(--accent-cyan);
+            letter-spacing: 1px;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ================= RESPONSIVENESS ================= */
+        @media (max-width: 1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero-text h1 {
+                font-size: 2.8rem;
+            }
+            .hero-buttons {
+                justify-content: center;
+            }
+            .turf-banner {
+                justify-content: center;
+                max-width: 600px;
+                margin: 20px auto 0 auto;
+            }
+            .showroom-grid {
+                grid-template-columns: 1fr;
+                max-width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background-color: var(--bg-white);
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 40px;
+                gap: 25px;
+                transition: var(--transition);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            }
+            .nav-menu.active {
+                left: 0;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .timeline {
+                flex-direction: column;
+                align-items: center;
+                gap: 35px;
+            }
+            .timeline::before {
+                top: 0;
+                left: 50%;
+                width: 4px;
+                height: calc(100% - 80px);
+                transform: translateX(-50%);
+            }
+            .timeline-step {
+                width: 100%;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-text h1 {
+                font-size: 2.1rem;
+            }
+            .gallery-grid, .why-grid, .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .turf-banner {
+                grid-template-columns: 1fr;
+            }
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+            .hero-buttons .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- FLOATING UTILITIES -->
+    <div class="floating-container">
+        <a href="https://wa.me/1234567890" target="_blank" class="float-btn float-whatsapp" aria-label="WhatsApp Support">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.388 1.978 13.911 1.05 11.994 1.05c-5.433 0-9.859 4.37-9.863 9.8-.001 1.815.51 3.125 1.472 4.673l-.997 3.637 3.754-.975v-.001z"/>
+            </svg>
+        </a>
+        <a href="tel:+1234567890" class="float-btn float-call" aria-label="Call Customer Line">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+        </a>
+        <button id="scrollToTopBtn" class="float-btn float-scroll" aria-label="Go to Top">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <line x1="12" y1="19" x2="12" y2="5"></line>
+                <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+        </button>
+    </div>
+
+    <!-- ================= STICKY NAVIGATION HEADER ================= -->
+    <header id="mainHeader">
+        <div class="container header-container">
+            <a href="#home" class="logo-wrap">
+                <div class="logo-text">
+                    <span class="logo-main">binz o’boris</span>
+                    <span class="logo-sub">READYMADE SWIMMING POOLS</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#showroom" class="nav-link">Experience Center</a>
+                <a href="#why-choose" class="nav-link">Why Choose Us</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#contact" class="btn btn-primary nav-cta">GET A FREE QUOTE</a>
+            </nav>
+
+            <button class="hamburger" id="hamburgerBtn" aria-label="Open Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ================= PREMIUM HERO SECTION ================= -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <h1>READYMADE SWIMMING POOLS <br><span>DESIGNED FOR YOUR DREAM SPACE</span></h1>
+                    <p>Transform your home, commercial, or resort landscape with premium readymade swimming pools built for absolute durability, rapid integration, and long-lasting beauty.</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#showroom" class="btn btn-secondary">Explore Showroom</a>
+                        <a href="#contact" class="btn btn-outline">Consultation</a>
+                    </div>
+
+                    <!-- Grass Turf Features Accent Bar -->
+                    <div class="turf-banner">
+                        <div class="turf-item">
+                            <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>Durability Certified</span>
+                        </div>
+                        <div class="turf-item">
+                            <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>Rapid 10-Day Setup</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-frame" onclick="openLightboxDirect(0)">
+                    <img src="https://i.ibb.co/r2fXfxx3/IMG-20260822-194806.jpg" alt="Binz O' Boris Flagship Reception Showroom Banner">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= EXPERIENTIAL SHOWROOM SECTION ================= -->
+    <section class="showroom-sec" id="showroom">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Experience Our Pool Solutions</h2>
+                <p>Visit our live exhibition showcase to touch, feel, and configure the ultimate swimming space designed exactly for your home.</p>
+            </div>
+
+            <div class="showroom-grid">
+                <!-- Card 1 -->
+                <div class="showroom-card fade-in" onclick="openLightboxDirect(0)">
+                    <div class="showroom-img-wrap">
+                        <img src="https://i.ibb.co/r2fXfxx3/IMG-20260822-194806.jpg" alt="Flagship Reception & Consultation Hub">
+                    </div>
+                    <div class="showroom-details">
+                        <h3>Flagship Reception Desk &amp; Consultation Hub</h3>
+                        <p>Meet our lead swimming pool designers to configure and evaluate layout renderings on our large presentation media walls.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="showroom-card fade-in" onclick="openLightboxDirect(1)">
+                    <div class="showroom-img-wrap">
+                        <img src="https://i.ibb.co/Zzw7RVhx/IMG-20260822-195019.jpg" alt="Exhibition Booth & Architectural Design Panel">
+                    </div>
+                    <div class="showroom-details">
+                        <h3>Interactive Booth &amp; Design Panels</h3>
+                        <p>Witness our multi-layered composite shell structural metrics up close, and explore customization formats suited for private villas.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="showroom-card fade-in" onclick="openLightboxDirect(2)">
+                    <div class="showroom-img-wrap">
+                        <img src="https://i.ibb.co/nqdfMwZ6/IMG-20260822-195107.jpg" alt="Premium Consultation Lounge Area">
+                    </div>
+                    <div class="showroom-details">
+                        <h3>Premium Showroom Lounge Center</h3>
+                        <p>Relax in our customized booth seating areas as we outline mechanical filtration steps, heating systems, and water pumps.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="showroom-card fade-in" onclick="openLightboxDirect(3)">
+                    <div class="showroom-img-wrap">
+                        <img src="https://i.ibb.co/SX4bRY3W/IMG-20260822-195240.jpg" alt="Architectural Access Stairway & Display Walls">
+                    </div>
+                    <div class="showroom-details">
+                        <h3>Access Stairway &amp; Architectural Showcases</h3>
+                        <p>Step up to inspect finished pool shells and evaluate structural stairs, railings, safety features, and tiling options.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section class="why-choose" id="why-choose">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Why Choose Binz O’ Boris?</h2>
+                <p>Our engineered composite systems guarantee efficient logistics, rapid installation, and unparalleled life cycles.</p>
+            </div>
+
+            <div class="why-grid">
+                <!-- Durability -->
+                <div class="why-card fade-in">
+                    <div class="why-card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="10" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                    <h3>Durability</h3>
+                    <p>Engineered with multi-layered high-tensile structural shells that withstand ground shifting and heavy loads effortlessly.</p>
+                </div>
+                <!-- Low Maintenance -->
+                <div class="why-card fade-in">
+                    <div class="why-card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                        </svg>
+                    </div>
+                    <h3>Low Maintenance</h3>
+                    <p>Non-porous, smooth surfaces inhibit algae adhesion, reducing standard chemical requirements and upkeep efforts.</p>
+                </div>
+                <!-- Customised Design -->
+                <div class="why-card fade-in">
+                    <div class="why-card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                            <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"></path>
+                        </svg>
+                    </div>
+                    <h3>Customised Design</h3>
+                    <p>Designed dynamically around available yard configurations, ensuring complete aesthetic alignment.</p>
+                </div>
+                <!-- Quality Materials -->
+                <div class="why-card fade-in">
+                    <div class="why-card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+                            <line x1="12" y1="22" x2="12" y2="12.5"></line>
+                            <line x1="22" y1="8.5" x2="12" y2="12.5"></line>
+                            <line x1="2" y1="8.5" x2="12" y2="12.5"></line>
+                        </svg>
+                    </div>
+                    <h3>Quality Materials</h3>
+                    <p>Formulated from ISO-grade weather-resistant resins to ensure maximum protection against color fading.</p>
+                </div>
+                <!-- Cost Effective -->
+                <div class="why-card fade-in">
+                    <div class="why-card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3>Cost Effective</h3>
+                    <p>Pre-molded architecture minimizes costly civil work, lowering deployment expenditures significantly.</p>
+                </div>
+                <!-- Long Lasting -->
+                <div class="why-card fade-in">
+                    <div class="why-card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Long Lasting</h3>
+                    <p>Designed with micro-flex structural properties, ensuring decades of premium water leisure without leakages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= GALLERY SECTION ================= -->
+    <section class="gallery-sec" id="gallery">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Our Recent Projects</h2>
+                <p>Observe the precise, high-end showroom blueprints and live exhibition installations crafted by our specialized team.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in" onclick="openLightboxDirect(0)">
+                    <img src="https://i.ibb.co/r2fXfxx3/IMG-20260822-194806.jpg" alt="Showroom Consultation Desk Area">
+                    <div class="gallery-overlay">
+                        <span class="gallery-overlay-icon">&#x1f50d;</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" onclick="openLightboxDirect(1)">
+                    <img src="https://i.ibb.co/Zzw7RVhx/IMG-20260822-195019.jpg" alt="Showroom Design Showcase Booth">
+                    <div class="gallery-overlay">
+                        <span class="gallery-overlay-icon">&#x1f50d;</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" onclick="openLightboxDirect(2)">
+                    <img src="https://i.ibb.co/nqdfMwZ6/IMG-20260822-195107.jpg" alt="Showroom Lounge and Dining Panel">
+                    <div class="gallery-overlay">
+                        <span class="gallery-overlay-icon">&#x1f50d;</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" onclick="openLightboxDirect(3)">
+                    <img src="https://i.ibb.co/SX4bRY3W/IMG-20260822-195240.jpg" alt="Showroom Access Stairway Entry">
+                    <div class="gallery-overlay">
+                        <span class="gallery-overlay-icon">&#x1f50d;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TIMELINE PROCESS SECTION ================= -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>How We Build Your Dream Pool</h2>
+                <p>Four strategic phases tracking your custom swimming pool project from concept to immediate delivery.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-step fade-in">
+                    <div class="step-number">01</div>
+                    <h3>Consultation</h3>
+                    <p>Detailed mapping of site dimensions, layout parameters, structural boundaries, and pricing options.</p>
+                </div>
+                <div class="timeline-step fade-in">
+                    <div class="step-number">02</div>
+                    <h3>Design Approval</h3>
+                    <p>Precise architectural modeling of shell curves, surrounding decking, piping, and lighting configurations.</p>
+                </div>
+                <div class="timeline-step fade-in">
+                    <div class="step-number">03</div>
+                    <h3>Installation</h3>
+                    <p>Rapid shipping of premium readymade composite shell followed by piping fitting, filtration testing, and secure backup.</p>
+                </div>
+                <div class="timeline-step fade-in">
+                    <div class="step-number">04</div>
+                    <h3>Handover</h3>
+                    <p>Water chemistry alignment, full mechanical equipment run-through, maintenance guide, and handover.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS SECTION ================= -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>What Our Customers Say</h2>
+                <p>Reviews highlighting premium consultation experiences, structural durability, and rapid installation timelines.</p>
+            </div>
+
+            <div class="testimonials-container fade-in">
+                <div class="testimonial-slider" id="testimonialSlider">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+                            <p class="testimonial-text">"Visiting their live showroom was a game-changer. Seeing the composite shell quality and structural thickness up close convinced us. The final pool was fully operating within days!"</p>
+                            <div class="testimonial-author">
+                                <h4>Marcus Sterling</h4>
+                                <span>Homeowner, Luxury District</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+                            <p class="testimonial-text">"Outstanding engineering and commercial support. The interactive presentations in their lounge helped us configure a multi-level pool shell for our estate. Zero hassle."</p>
+                            <div class="testimonial-author">
+                                <h4>Clara Dupont</h4>
+                                <span>Developer, Elite Heights</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+                            <p class="testimonial-text">"Superb customer onboarding. The physical staircase samples and step models in their gallery helped us verify the layout and safety features with precision. Extremely happy."</p>
+                            <div class="testimonial-author">
+                                <h4>Aidan Fletcher</h4>
+                                <span>Architect, Coastal Crest</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="slider-btn" id="prevSlide" aria-label="Previous Testimonial">
+                        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="slider-btn" id="nextSlide" aria-label="Next Testimonial">
+                        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CTA BANNER ================= -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content fade-in">
+                <h2>Ready To Build Your Dream Swimming Pool?</h2>
+                <p>Consult with our structural design experts today and secure a custom pool blueprint designed perfectly for your home.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">GET FREE QUOTE</a>
+                    <a href="tel:+1234567890" class="btn btn-outline">CALL NOW</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Form Wrap -->
+                <div class="contact-form-wrap fade-in">
+                    <h3>Let’s Build Your Dream Pool</h3>
+                    <div id="formSuccess" class="success-message">Thank you! Your swimming pool inquiry has been received. Our showroom managers will contact you shortly.</div>
+                    
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="formName">Full Name</label>
+                                <input type="text" id="formName" class="form-control" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="formPhone">Phone Number</label>
+                                <input type="tel" id="formPhone" class="form-control" placeholder="+1 (555) 000-0000" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="formEmail">Email Address</label>
+                                <input type="email" id="formEmail" class="form-control" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="formCity">City / Location</label>
+                                <input type="text" id="formCity" class="form-control" placeholder="New York" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="formPoolType">Select Pool Design Type</label>
+                            <select id="formPoolType" class="form-control" required>
+                                <option value="" disabled selected>Select a design style...</option>
+                                <option value="family">Family Swim Configuration</option>
+                                <option value="luxury">Luxury Elite Layout</option>
+                                <option value="resort">Commercial Resort Model</option>
+                                <option value="compact">Urban Plunge / Compact</option>
+                                <option value="infinity">Vanishing Infinity Edge</option>
+                                <option value="custom">Bespoke Showroom Concept</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="formMessage">Your Message / Yard Dimensions</label>
+                            <textarea id="formMessage" class="form-control" placeholder="Briefly describe your installation timeline and garden footprints..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary" style="width: 100%;">SEND ENQUIRY</button>
+                    </form>
+                </div>
+
+                <!-- Info Cards -->
+                <div class="contact-info fade-in">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Phone Support</h4>
+                            <p>+1 (800) 555-POOL<br>+1 (555) 987-6543</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Corporate Email</h4>
+                            <p>sales@binzoboris.com<br>support@binzoboris.com</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Flagship Showroom</h4>
+                            <p>Exhibition Pavilion 4, Suite 102,<br>Industrial Design District, NY 10021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo-wrap footer-logo">
+                        <div class="logo-text">
+                            <span class="logo-main">binz o’boris</span>
+                            <span class="logo-sub">READYMADE SWIMMING POOLS</span>
+                        </div>
+                    </div>
+                    <p>Binz O’ Boris is an industry-leading readymade swimming pool manufacturer, providing highly engineered and structural composite shell pool models.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-btn" aria-label="Facebook"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8H7v3h2v9h3v-9h3.5l.5-3H12V6c0-.5.5-1 1-1h2V2h-3C9.5 2 9 3.5 9 5v3z"/></svg></a>
+                        <a href="#" class="social-btn" aria-label="Instagram"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051C.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                        <a href="#" class="social-btn" aria-label="LinkedIn"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#showroom">Showroom</a></li>
+                        <li><a href="#why-choose">Why Choose Us</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#showroom">Residential Pools</a></li>
+                        <li><a href="#showroom">Commercial Pools</a></li>
+                        <li><a href="#showroom">Resort Models</a></li>
+                        <li><a href="#showroom">Bespoke Design</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Flagship Showroom</h4>
+                    <p style="font-size: 0.88rem; line-height: 1.7; margin-bottom: 10px;">Exhibition Pavilion 4, Suite 102,<br>Industrial Design District, NY 10021</p>
+                    <p style="font-size: 0.88rem; line-height: 1.7;">P: +1 (800) 555-POOL<br>E: sales@binzoboris.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Binz O’ Boris. All Rights Reserved. Clean &amp; Premium Showroom Design.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= PREMIUM VANILLA LIGHTBOX MODAL ================= -->
+    <div class="lightbox" id="showroomLightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        
+        <div class="lightbox-container">
+            <img class="lightbox-img" id="lightboxImg" src="" alt="Binz O' Boris Showroom Visual">
+        </div>
+
+        <div class="lightbox-nav">
+            <button class="lightbox-btn" id="lightboxPrev" aria-label="Previous Image">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button class="lightbox-btn" id="lightboxNext" aria-label="Next Image">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+
+        <div class="lightbox-footer">
+            <div class="lightbox-caption" id="lightboxCaption">Exhibition Image Caption</div>
+            <div class="lightbox-counter" id="lightboxCounter">1 of 4</div>
+        </div>
+    </div>
+
+    <!-- ================= VANILLA JAVASCRIPT ================= -->
+    <script>
+        // --- MOBILE NAV TOGGLE ---
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const navMenu = document.getElementById('navMenu');
+        const navLinks = document.querySelectorAll('.nav-link, .nav-cta');
+
+        hamburgerBtn.addEventListener('click', () => {
+            hamburgerBtn.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburgerBtn.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // --- STICKY NAV BACKGROUND ---
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('mainHeader');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // --- SCROLL TO TOP ---
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTopBtn.classList.add('active');
+            } else {
+                scrollToTopBtn.classList.remove('active');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // --- CONTACT FORM SUBMISSION ---
+        function handleFormSubmit(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('formName').value.trim();
+            const phone = document.getElementById('formPhone').value.trim();
+            const email = document.getElementById('formEmail').value.trim();
+            const city = document.getElementById('formCity').value.trim();
+            const poolType = document.getElementById('formPoolType').value;
+            const message = document.getElementById('formMessage').value.trim();
+
+            if (name && phone && email && city && poolType && message) {
+                const successMsg = document.getElementById('formSuccess');
+                successMsg.style.display = 'block';
+                document.getElementById('contactForm').reset();
+
+                successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                setTimeout(() => {
+                    successMsg.style.display = 'none';
+                }, 6000);
+            }
+        }
+
+        // --- TESTIMONIALS SLIDER ---
+        const slides = document.querySelectorAll('.testimonial-slide');
+        const prevBtn = document.getElementById('prevSlide');
+        const nextBtn = document.getElementById('nextSlide');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            
+            if (index >= slides.length) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = slides.length - 1;
+            } else {
+                currentSlide = index;
+            }
+            
+            slides[currentSlide].classList.add('active');
+        }
+
+        nextBtn.addEventListener('click', () => {
+            showSlide(currentSlide + 1);
+        });
+
+        prevBtn.addEventListener('click', () => {
+            showSlide(currentSlide - 1);
+        });
+
+        setInterval(() => {
+            showSlide(currentSlide + 1);
+        }, 8000);
+
+        // --- FADE-IN ANIMATION TRIGGERS ---
+        const animateOnScroll = () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(el => observer.observe(el));
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            animateOnScroll();
+        });
+
+        // --- PREMIUM LIGHTBOX CAROUSEL ENGINE ---
+        const showroomImages = [
+            "https://i.ibb.co/r2fXfxx3/IMG-20260822-194806.jpg",
+            "https://i.ibb.co/Zzw7RVhx/IMG-20260822-195019.jpg",
+            "https://i.ibb.co/nqdfMwZ6/IMG-20260822-195107.jpg",
+            "https://i.ibb.co/SX4bRY3W/IMG-20260822-195240.jpg"
+        ];
+
+        const showroomTitles = [
+            "Flagship Consultation & Reception Desk Area",
+            "Exhibition Booth & Architectural Design Panel",
+            "Premium Lounge & Consultation Area",
+            "Interactive Showroom Stairs & Feature Wall"
+        ];
+
+        let lightboxIndex = 0;
+
+        const lightboxModal = document.getElementById('showroomLightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxClose = document.getElementById('lightboxClose');
+        const lightboxPrev = document.getElementById('lightboxPrev');
+        const lightboxNext = document.getElementById('lightboxNext');
+        const lightboxCaption = document.getElementById('lightboxCaption');
+        const lightboxCounter = document.getElementById('lightboxCounter');
+
+        function updateLightbox() {
+            lightboxImg.style.opacity = '0';
+            setTimeout(() => {
+                lightboxImg.src = showroomImages[lightboxIndex];
+                lightboxCaption.innerText = showroomTitles[lightboxIndex];
+                lightboxCounter.innerText = `${lightboxIndex + 1} of ${showroomImages.length}`;
+                lightboxImg.style.opacity = '1';
+            }, 150);
+        }
+
+        function openLightboxDirect(index) {
+            lightboxIndex = index;
+            updateLightbox();
+            lightboxModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        lightboxClose.addEventListener('click', () => {
+            lightboxModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        lightboxNext.addEventListener('click', (e) => {
+            e.stopPropagation();
+            lightboxIndex = (lightboxIndex + 1) % showroomImages.length;
+            updateLightbox();
+        });
+
+        lightboxPrev.addEventListener('click', (e) => {
+            e.stopPropagation();
+            lightboxIndex = (lightboxIndex - 1 + showroomImages.length) % showroomImages.length;
+            updateLightbox();
+        });
+
+        // Close on overlay click
+        lightboxModal.addEventListener('click', (e) => {
+            if (e.target === lightboxModal) {
+                lightboxModal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Keyboard Controls
+        document.addEventListener('keydown', (e) => {
+            if (lightboxModal.classList.contains('active')) {
+                if (e.key === 'ArrowRight') {
+                    lightboxIndex = (lightboxIndex + 1) % showroomImages.length;
+                    updateLightbox();
+                } else if (e.key === 'ArrowLeft') {
+                    lightboxIndex = (lightboxIndex - 1 + showroomImages.length) % showroomImages.length;
+                    updateLightbox();
+                } else if (e.key === 'Escape') {
+                    lightboxModal.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            }
+        });
+    </script>
+</body>
+</html>mm
